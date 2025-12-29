@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary Uploader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-cloud-upload-alt"></i> Cloudinary Uploader</h1>
+        
+        <div class="upload-area" id="dropArea">
+            <i class="fas fa-cloud-upload-alt fa-3x"></i>
+            <p>Drag & drop your files here</p>
+            <p class="subtext">or click to browse</p>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+        
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+            <span id="progressText">0%</span>
+        </div>
+        
+        <div class="preview-container" id="previewContainer">
+            <h3>Uploaded Image:</h3>
+            <div id="imagePreview"></div>
+            <div class="url-container" id="urlContainer">
+                <p>Image URL:</p>
+                <input type="text" id="imageUrl" readonly>
+                <button id="copyBtn"><i class="fas fa-copy"></i> Copy</button>
+            </div>
+        </div>
+        
+        <div class="status" id="status"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
